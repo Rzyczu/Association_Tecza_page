@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
 :root {
   /* --clr-primary-200: #f3eed9;
   --clr-primary-400: #824936;
@@ -6,13 +8,14 @@
   --clr-neutral-900: #222c2a; */
 
   --ff-primary: "Roboto", sans-serif;
-  --ff-accent: "Playfair Display", serif;
+  --ff-accent: 'Montserrat', sans-serif;
 
 
   --clr-primary: #009641;
-  --clr-secondary: #003f85;
-  --clr-dark: #001935;
-  --clr-light: #f3eed9;
+  --clr-secondary: #e36217;
+  --clr-secondary2: #003f85;
+  --clr-dark: #001b39;
+  --clr-light: #f5f3ec;
   --clr-info: #f24329;
 
 }
@@ -23,11 +26,81 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 14px;
+
+}
+
+html,
+body {
+  height: 100%;
+}
+
 body,
 h1,
 h2,
 h3,
-p {
+p,
+li {
+  font-family: var(--ff-accent);
   margin: 0;
-  ;
+  font-size: 1rem;
 }
+
+.display-4 {
+  font-size: 1.2rem;
+}
+
+.display-3 {
+  font-size: 1.5rem;
+}
+
+.display-2 {
+  font-size: 2rem;
+}
+
+.display-1 {
+  font-size: 3.5rem;
+}
+
+@media only screen and (max-width:1000px) {
+
+  html {
+    font-size: 16px;
+
+  }
+}
+
+
+
+.Section {
+  padding: 8em 1em 1em 1em;
+  position: relative;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.Section-title {
+  position: relative;
+  text-align: center;
+  letter-spacing: 5px;
+  padding-bottom: 3em;
+}
+
+.Section-title::before {
+  content: '';
+  position: absolute;
+  top: -.5em;
+  left: -webkit-calc(50% - 100px);
+  left: -moz-calc(50% - 100px);
+  left: calc(50% - 100px);
+  height: 100px;
+  width: 200px;
+  background-image: url("./assets/rainbow.png");
+  background-size: 100% 100%;
+  z-index: -1;
+  opacity: 0.3;
+
+}
+
+body {}

@@ -1,0 +1,102 @@
+.Accessibility {
+    position: fixed;
+    right: 0;
+    top: 200px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--clr-primary);
+    z-index: 9999 !important;
+}
+
+.toggle {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.toggle:focus~.toggle-label {
+    outline: 3px solid rgba(lightblue, .75);
+}
+
+.toggle-label {
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: var(--clr-light);
+
+}
+
+
+.toggle-label span::before {
+    bottom: 9px;
+}
+
+.toggle-label span::after {
+    top: 9px;
+}
+
+
+
+.Accessibility-nav {
+    position: absolute;
+    text-align: left;
+    padding-top: 30px;
+    top: 0;
+    left: -200px;
+    background: var(--clr-light);
+    width: 200px;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 0px 1px 0.8px rgba(0, 0, 0, 0.02),
+        0px 2.5px 2px rgba(0, 0, 0, 0.028),
+        0px 4.6px 3.8px rgba(0, 0, 0, 0.035),
+        0px 8.3px 6.7px rgba(0, 0, 0, 0.042),
+        0px 15.5px 12.5px rgba(0, 0, 0, 0.05),
+        0px 37px 30px rgba(0, 0, 0, 0.07);
+    font-size: large;
+}
+
+.Accessibility-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.Accessibility-nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    padding: 10px;
+}
+
+.Accessibility-nav a {
+    width: 100%;
+    padding: 5px;
+    color: var(--clr-primary);
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+    font-weight: 900;
+}
+
+.Accessibility-nav a:hover {
+    color: var(--clr-secondary);
+}
+
+.toggle:checked~.Accessibility-nav {
+    transform: scale(1, 1);
+}
+
+.toggle:checked~.Accessibility-nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
