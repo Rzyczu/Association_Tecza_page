@@ -26,7 +26,7 @@
 
 .logo img {
     margin-right: 1rem;
-    width: 150px;
+    width: 90px;
     height: auto;
     object-fit: contain
 }
@@ -110,14 +110,14 @@ nav ul {
 
 
 nav li {
-    margin-bottom: 1em;
     margin-left: 1em;
-    padding: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 
 }
 
 nav a {
-    padding: 12px;
+    padding: 10px;
     color: var(--clr-primary);
     text-decoration: none;
     text-transform: uppercase;
@@ -301,11 +301,9 @@ nav a:hover {
     color: #f24329;
 }
 
-@media screen and (min-width: 1250px) and (max-width:1430px) {
+@media screen and (min-width: 1430px) {
     .logo img {
-        width: 90px;
+        width: 150px;
         height: auto;
     }
-
-
 }
