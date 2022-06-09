@@ -17,7 +17,7 @@
 
 .logo {
     font-family: var(--ff-accent);
-    font-size: .8rem;
+    font-size: .6rem;
     text-align: left;
     display: flex;
     justify-content: center;
@@ -56,8 +56,8 @@
 .nav-toggle-label span::after {
     display: block;
     background: var(--clr-primary);
-    height: 3px;
-    width: 2.5em;
+    height: 4px;
+    width: 50px;
     border-radius: 2px;
     position: relative;
 }
@@ -69,11 +69,11 @@
 }
 
 .nav-toggle-label span::before {
-    bottom: 9px;
+    bottom: 10px;
 }
 
 .nav-toggle-label span::after {
-    top: 9px;
+    top: 10px;
 }
 
 
@@ -117,7 +117,7 @@ nav li {
 }
 
 nav a {
-    padding: 10px;
+    padding: 5 x;
     color: var(--clr-primary);
     text-decoration: none;
     text-transform: uppercase;
@@ -184,6 +184,7 @@ nav a:hover {
     .logo {
         align-items: center;
         flex: 3;
+        font-size: .8rem;
     }
 
     nav {

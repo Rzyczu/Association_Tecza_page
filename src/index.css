@@ -27,7 +27,7 @@
 }
 
 html {
-  font-size: 14px;
+  /* font-size: 14px; */
 
 }
 
@@ -41,32 +41,33 @@ h1,
 h2,
 h3,
 p,
-li {
+li,
+button {
   font-family: var(--ff-accent);
   margin: 0;
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .display-4 {
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 .display-3 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 .display-2 {
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 .display-1 {
-  font-size: 3.5rem;
+  font-size: 3.5em;
 }
 
 @media only screen and (max-width:1000px) {
 
   html {
-    font-size: 16px;
+    /* font-size: 16px; */
 
   }
 }

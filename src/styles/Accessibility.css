@@ -30,31 +30,19 @@
 
 }
 
-
-.toggle-label span::before {
-    bottom: 9px;
-}
-
-.toggle-label span::after {
-    top: 9px;
-}
-
-
-
-.Accessibility-nav {
+.Accessibility-buttons {
     position: absolute;
     text-align: left;
-    padding-top: 30px;
-    top: 0;
-    left: -200px;
+    padding: 1em;
+    top: 0px;
+    left: -300px;
     background: var(--clr-light);
-    width: 200px;
+    width: 300px;
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
     box-shadow: 0px 1px 0.8px rgba(0, 0, 0, 0.02),
         0px 2.5px 2px rgba(0, 0, 0, 0.028),
         0px 4.6px 3.8px rgba(0, 0, 0, 0.035),
@@ -64,39 +52,28 @@
     font-size: large;
 }
 
-.Accessibility-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
 
-.Accessibility-nav li {
+.Accessibility-buttons button {
     margin-bottom: 1em;
-    margin-left: 1em;
-    padding: 10px;
-}
-
-.Accessibility-nav a {
-    width: 100%;
-    padding: 5px;
-    color: var(--clr-primary);
+    list-style: none;
+    text-align: left;
     text-decoration: none;
-    text-transform: uppercase;
-    opacity: 0;
     transition: opacity 150ms ease-in-out;
-    font-weight: 900;
+    font-weight: 400;
+    border: 0;
 }
 
-.Accessibility-nav a:hover {
+.Accessibility-buttons button:hover {
     color: var(--clr-secondary);
+    border: 1px solid var(--clr-secondary);
 }
 
-.toggle:checked~.Accessibility-nav {
+.toggle:checked~.Accessibility-buttons {
     transform: scale(1, 1);
 }
 
-.toggle:checked~.Accessibility-nav a {
+.toggle:checked~.Accessibility-buttons a {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
 }

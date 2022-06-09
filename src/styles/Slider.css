@@ -10,7 +10,7 @@
     padding: 10px;
     border-radius: 10px;
     align-items: center;
-    height: 500px;
+    height: 480px;
     text-align: left;
     justify-content: flex-start;
 }
@@ -81,12 +81,6 @@
 .swiper-button-prev:hover {
     color: var(--clr-secondary);
 
-}
-
-@media only screen and (max-width: 1000px) {
-    .News {
-        height: 580px;
-    }
 }
 
 @media only screen and (max-width: 500px) {
