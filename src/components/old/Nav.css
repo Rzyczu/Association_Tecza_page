@@ -79,7 +79,7 @@
 
 
 
-.nav-list {
+nav {
     position: absolute;
     text-align: left;
     padding-top: 30px;
@@ -92,7 +92,7 @@
     transition: transform 400ms ease-in-out;
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: space-evenly;
     box-shadow: 0px 1px 0.8px rgba(0, 0, 0, 0.02),
         0px 2.5px 2px rgba(0, 0, 0, 0.028),
         0px 4.6px 3.8px rgba(0, 0, 0, 0.035),
@@ -103,21 +103,21 @@
 
 
 
-.nav-list ul {
+nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 
-.nav-list li {
+nav li {
     margin-left: 1em;
     padding-top: 5px;
     padding-bottom: 5px;
 
 }
 
-.nav-list a {
+nav a {
     padding: 10px;
     display: inline-block;
     width: 100%;
@@ -129,24 +129,21 @@
     font-weight: 900;
 }
 
-.nav-list a:hover {
+nav a:hover {
     color: var(--clr-secondary);
 }
 
 
-.nav-toggle:checked~.nav-list {
+.nav-toggle:checked~nav {
     transform: scale(1, 1);
 }
 
-.nav-toggle:checked~.nav-list a {
+.nav-toggle:checked~nav a {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-
-
-.nav-list li:nth-last-of-type(1) a,
-.nav-list li:nth-last-of-type(2) a {
+.top-nav a {
     display: block;
     height: 100%;
     padding-top: 20px;
@@ -157,24 +154,20 @@
     padding: 10px;
 }
 
-.nav-list li:nth-last-of-type(1) a::before,
-.nav-list li:nth-last-of-type(2) a::before,
-.nav-list li:nth-last-of-type(1) a:hover::before,
-.nav-list li:nth-last-of-type(2) a:hover::before {
+.top-nav a::before {
     all: unset;
 }
 
+.top-nav a:hover::before {
+    all: unset;
+}
 
-
-.nav-list li:nth-last-of-type(1) a:hover,
-.nav-list li:nth-last-of-type(2) a:hover {
-
+.top-nav a:hover {
     color: var(--clr-light);
     font-weight: 900;
     background: var(--clr-primary);
 
 }
-
 
 @media screen and (min-width: 1250px) {
     .nav-toggle-label {
@@ -189,16 +182,16 @@
         padding: 10px;
         padding-left: 3em;
         padding-right: 3em;
+
     }
 
     .logo {
-        display: flex;
-        justify-content: left;
+        align-items: center;
         flex: 3;
         font-size: .8rem;
     }
 
-    .nav-list {
+    nav {
         all: unset;
         /* this causes issues with Edge, since it's unsupported */
 
@@ -212,6 +205,7 @@
         /* end Edge support stuff */
 
         flex: 7;
+        display: flex;
         justify-content: space-around;
         align-items: center;
 
@@ -219,32 +213,31 @@
 
 
 
-    .nav-list ul {
+    nav ul {
         display: flex;
         align-items: center;
-        flex-grow: 1;
     }
 
-    .nav-list li {
-        margin-right: 2em;
-        margin-left: 2em;
+    nav li {
+
+        margin-left: 1.5em;
+        margin-right: 1.5em;
         margin-bottom: 0;
     }
 
 
 
 
-    .nav-list a {
+    nav a {
         padding: 0;
         opacity: 1;
         position: relative;
     }
 
-    .nav-list a::before {
+    nav a::before {
         content: '';
         display: block;
         height: 5px;
-        background: var(--clr-secondary);
         position: absolute;
         width: 100%;
         top: -.75em;
@@ -254,60 +247,46 @@
         transition: transform ease-in-out 250ms;
     }
 
-    .nav-list a:hover::before {
+    nav a:hover::before {
         transform: scale(1, 1);
     }
 
-    .clr-1:hover::before {
+    .clr-1:hover::before,
+    .clr-1::before {
         background: #d7408b;
     }
 
-    .clr-2:hover::before {
+    .clr-2:hover::before,
+    .clr-2::before {
         background: #003f85;
     }
 
-    .clr-3:hover::before {
+    .clr-3:hover::before,
+    .clr-3::before {
         background: #00a4e6;
     }
 
-    .clr-4:hover::before {
+    .clr-4:hover::before,
+    .clr-4::before {
         background: #009641;
     }
 
-    .clr-5:hover::before {
+    .clr-5:hover::before,
+    .clr-5::before {
         background: #feec00;
     }
 
-    .clr-6:hover::before {
+    .clr-6:hover::before,
+    .clr-6::before {
         background: #ffa517;
     }
 
-    .clr-7:hover::before {
+    .clr-7:hover::before,
+    .clr-7::before {
         background: #f24329;
     }
 
-    .nav-list li:nth-last-of-type(1) {
-        margin-right: 0;
-        line-height: 2.5em;
-
-    }
-
-    .nav-list li:nth-last-of-type(2) {
-        margin-left: auto;
-        margin-right: 0;
-        line-height: 1.4em;
-
-    }
-
-    .nav-list li:nth-last-of-type(1) a,
-    .nav-list li:nth-last-of-type(2) a {
-        display: inline-block;
-        align-items: center;
-        height: 5em;
-        width: 8em;
-    }
 }
-
 
 .clr-1:hover {
     color: #d7408b;
