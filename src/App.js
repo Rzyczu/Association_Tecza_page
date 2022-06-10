@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import './App.css';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+
 import HomePage from './components/HomePage'
+import NotFound from './components/404'
+
 import Accessibility from './components/Accessibility';
 import {
   BrowserRouter as Router,
@@ -48,7 +51,9 @@ function App() {
       }}>
         <Nav />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route index path="/" element={<HomePage />} />
+          <Route path="*" element={<NotFound />} />
+
         </Routes>
         <Accessibility func={operation} />
         <Footer />

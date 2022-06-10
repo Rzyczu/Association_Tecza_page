@@ -129,10 +129,6 @@
     font-weight: 900;
 }
 
-.nav-list a:hover {
-    color: var(--clr-secondary);
-}
-
 
 .nav-toggle:checked~.nav-list {
     transform: scale(1, 1);

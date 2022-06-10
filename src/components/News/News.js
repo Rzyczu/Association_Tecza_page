@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/News.css';
+import '../../styles/News.css';
 import NewsElement from './NewsElement'
 class AboutUs extends React.Component {
     constructor() {

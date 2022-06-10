@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Navigation } from "swiper";
 
-import '../styles/Partners.css';
+import '../../styles/Partners.css';
 
 class Partners extends React.Component {
     constructor() {

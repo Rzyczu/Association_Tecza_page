@@ -57,8 +57,10 @@
 
 
 .Accessibility-buttons button {
+    all: unset;
     margin-bottom: 1em;
     list-style: none;
+    background-color: 0;
     text-align: left;
     text-decoration: none;
     transition: opacity 150ms ease-in-out;

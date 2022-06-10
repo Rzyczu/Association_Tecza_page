@@ -1,8 +1,8 @@
 import React from 'react';
-import Slider from './Slider';
-import AboutUs from './AboutUs';
-import Partners from './Partners';
-import News from './News';
+import Slider from './AboutUs/Slider';
+import AboutUs from './AboutUs/AboutUs';
+import Partners from './AboutUs/Partners';
+import News from './News/News';
 
 class HomePage extends React.Component {
     constructor() {
