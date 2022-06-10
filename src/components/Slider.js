@@ -22,7 +22,7 @@ class Slider extends React.Component {
     render() {
         return (
             <section className="Section">
-                <h2 className='Section-title display-2'>Aktualności</h2>
+                <h2 className='Section-title display-1'>Aktualności</h2>
 
                 <Swiper
                     slidesPerView={1}

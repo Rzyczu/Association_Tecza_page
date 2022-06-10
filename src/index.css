@@ -53,15 +53,15 @@ button {
 }
 
 .display-3 {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .display-2 {
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 .display-1 {
-  font-size: 3.5em;
+  font-size: 2em;
 }
 
 @media only screen and (max-width:1000px) {

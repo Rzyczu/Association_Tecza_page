@@ -1,0 +1,44 @@
+.News {
+    display: flex;
+    margin-bottom: 6em;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.News-photo img {
+    width: 450px;
+    height: auto;
+    object-fit: contain;
+}
+
+.News-date {
+    display: block;
+    color: gray;
+    position: relative;
+    top: 20px;
+    left: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .row-reverse,
+    .row {
+        flex-direction: column;
+    }
+
+    .News-photo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .News {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

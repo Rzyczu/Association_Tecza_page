@@ -9,7 +9,7 @@ class AboutUs extends React.Component {
     render() {
         return (
             <section className="Section">
-                <h2 className='Section-title display-2'>O nas</h2>
+                <h2 className='Section-title display-1'>O nas</h2>
                 <div className='AboutUs'>
                     <img className="AboutUs-img" src="https://picsum.photos/id/1/756/531" alt="opis zdjecia"></img>
                     <div className='content'>

@@ -20,7 +20,7 @@ class Partners extends React.Component {
     render() {
         return (
             <section className="Section">
-                <h2 className='Section-title display-2'>Partnerzy</h2>
+                <h2 className='Section-title display-1'>Partnerzy</h2>
 
                 <Swiper
                     slidesPerView={1}
