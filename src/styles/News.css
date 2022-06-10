@@ -11,10 +11,26 @@
     flex-direction: row;
 }
 
+.News-photo {
+    flex: 4;
+    display: flex
+}
+
+.row-reverse>.News-photo {
+    justify-content: right;
+}
+
+.row>.News-photo {
+    justify-content: left;
+}
+
+.News-content {
+    flex: 6;
+}
+
 .News-photo img {
-    width: 450px;
+    width: clamp(200px, 100%, 500px);
     height: auto;
-    object-fit: contain;
 }
 
 .News-date {
@@ -35,10 +51,20 @@
     .News-photo {
         display: flex;
         justify-content: center;
+        margin: 1em !important;
     }
+
 
     .News {
         align-items: center;
         flex-wrap: wrap;
+    }
+
+    .News-content {
+        margin: 1em !important;
+    }
+
+    .News-date {
+        text-align: right;
     }
 }
