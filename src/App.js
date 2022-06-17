@@ -17,7 +17,7 @@ import {
 
 function App() {
   const [fontSize, setFontSize] = React.useState(14);
-  const [color, setColor] = React.useState(false);
+  const [negative, setNegative] = React.useState(false);
 
   const colors = {
     primary: '#009641',
@@ -45,15 +45,16 @@ function App() {
           setFontSize(fontSize - 1)
       }
         break;
+      case "negative": {
+        setNegative(!negative)
+      }
+        break;
       case "restart": {
         setFontSize(14)
-      }
-        break;
-      case "negative": {
-        setColor(!color)
-      }
-        break;
+        setNegative(false)
 
+      }
+        break;
 
     }
 
@@ -63,13 +64,13 @@ function App() {
 
     <Router>
       <div style={{
-        "--clr-light": color ? colors.negativeClr : colors.light,
-        "--clr-secondary": color ? colors.negativeF : colors.secondary,
-        "--clr-primary": color ? colors.negativeF : colors.primary,
-        "--clr-dark": color ? colors.negativeF : colors.dark,
+        "--clr-light": negative ? colors.negativeClr : colors.light,
+        "--clr-secondary": negative ? colors.negativeF : colors.secondary,
+        "--clr-primary": negative ? colors.negativeF : colors.primary,
+        "--clr-dark": negative ? colors.negativeF : colors.dark,
 
-        color: color ? colors.negativeF : colors.dark,
-        backgroundColor: color ? '#19191a' : '#ffffff',
+        color: negative ? colors.negativeF : colors.dark,
+        backgroundColor: negative ? '#19191a' : '#ffffff',
         fontSize: `${fontSize}px`,
 
       }}>

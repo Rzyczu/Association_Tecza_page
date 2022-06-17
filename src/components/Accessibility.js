@@ -39,9 +39,9 @@ class Accessibility extends React.Component {
                     <button onClick={e => this.handleClick("downerFontSize")}>
                         <FontAwesomeIcon icon={faMagnifyingGlassMinus} /> Pomniejsz tekst
                     </button>
-                    <button onClick={e => this.handleClick("higherContrast")}>
+                    {/* <button onClick={e => this.handleClick("higherContrast")}>
                         <FontAwesomeIcon icon={faCircleHalfStroke} /> Wyższy kontrast
-                    </button>
+                    </button> */}
                     <button onClick={e => this.handleClick("negative")}>
                         <FontAwesomeIcon icon={faEye} /> Negatyw
                     </button>
