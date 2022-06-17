@@ -17,6 +17,17 @@ import {
 
 function App() {
   const [fontSize, setFontSize] = React.useState(14);
+  const [color, setColor] = React.useState(false);
+
+  const colors = {
+    primary: '#f5f3ec',
+    secondary: '#e36217',
+    dark: '#001b39',
+    light: '#f5f3ec',
+    negativeClr: 'black',
+    negativeF: 'yellow'
+  }
+
   const operation = (data) => {
     // alert(data)
     switch (data) {
@@ -37,17 +48,30 @@ function App() {
       case "restart": {
         setFontSize(14)
       }
-
+        break;
+      case "negative": {
+        setColor(!color)
+      }
+        break;
 
 
     }
+
 
   }
   return (
 
     <Router>
       <div style={{
-        fontSize: `${fontSize}px`
+        "--clr-light": color ? colors.negativeClr : colors.light,
+        "--clr-secondary": color ? colors.negativeF : colors.secondary,
+        "--clr-primary": color ? colors.negativeF : colors.primary,
+        "--clr-dark": color ? colors.negativeF : colors.dark,
+
+        color: color ? colors.negativeF : colors.dark,
+        backgroundColor: color ? '#19191a' : '#ffffff',
+        fontSize: `${fontSize}px`,
+
       }}>
         <Nav />
         <Routes>

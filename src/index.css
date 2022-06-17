@@ -11,12 +11,13 @@
   --ff-accent: 'Montserrat', sans-serif;
 
 
-  --clr-primary: #009641;
+  /* --clr-primary: #009641;
   --clr-secondary: #e36217;
   --clr-secondary2: #003f85;
-  --clr-dark: #001b39;
-  --clr-light: #f5f3ec;
-  --clr-info: #f24329;
+  --clr-dark: #001b39; */
+  /* --clr-light: #f5f3ec; */
+  /* --clr-negative-dark: black;
+  --clr-negative-light: yellow; */
 
 }
 
@@ -72,7 +73,10 @@ button {
   }
 }
 
+body {
+  background-color: var(--clr-light);
 
+}
 
 .Section {
   padding: 8em 1em 1em 1em;
