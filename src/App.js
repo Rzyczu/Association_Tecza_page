@@ -20,7 +20,7 @@ function App() {
   const [color, setColor] = React.useState(false);
 
   const colors = {
-    primary: '#f5f3ec',
+    primary: '#009641',
     secondary: '#e36217',
     dark: '#001b39',
     light: '#f5f3ec',
