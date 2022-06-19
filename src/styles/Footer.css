@@ -25,6 +25,7 @@
 .Footer p,
 a {
     font-size: .85em;
+
 }
 
 .Footer-more {
@@ -76,7 +77,7 @@ a {
 
 .Footer a {
     text-decoration: none;
-    color: black;
+    color: var(--clr-dark);
 }
 
 .Footer p {

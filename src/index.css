@@ -83,6 +83,9 @@ body {
   position: relative;
   max-width: 1500px;
   margin: auto;
+  z-index: 1;
+
+
 }
 
 .Section-title {
@@ -90,6 +93,7 @@ body {
   text-align: center;
   letter-spacing: 5px;
   padding-bottom: 3em;
+
 }
 
 .Section-title::before {
@@ -103,8 +107,8 @@ body {
   width: 200px;
   background-image: url("./assets/rainbow.png");
   background-size: 100% 100%;
-  z-index: -1;
   opacity: 0.3;
+  z-index: -1;
 
 }
 

@@ -4,6 +4,8 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 
 import HomePage from './components/HomePage'
+import NewsPage from './components/NewsPage'
+
 import NotFound from './components/404'
 
 import Accessibility from './components/Accessibility';
@@ -16,8 +18,8 @@ import {
 
 
 function App() {
-  const [fontSize, setFontSize] = React.useState(14);
-  const [negative, setNegative] = React.useState(false);
+  const [fontSize, setFontSize] = useState(14);
+  const [negative, setNegative] = useState(false);
 
   const colors = {
     primary: '#009641',
@@ -77,6 +79,8 @@ function App() {
         <Nav />
         <Routes>
           <Route index path="/" element={<HomePage />} />
+          <Route index path="/aktualnosci" element={<NewsPage />} />
+
           <Route path="*" element={<NotFound />} />
 
         </Routes>

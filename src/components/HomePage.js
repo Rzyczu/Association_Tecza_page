@@ -2,7 +2,6 @@ import React from 'react';
 import Slider from './AboutUs/Slider';
 import AboutUs from './AboutUs/AboutUs';
 import Partners from './AboutUs/Partners';
-import News from './News/News';
 
 class HomePage extends React.Component {
     constructor() {
@@ -15,8 +14,6 @@ class HomePage extends React.Component {
                 <Slider />
                 <AboutUs />
                 <Partners />
-                <News />
-
             </div>
         );
     }
