@@ -6,7 +6,7 @@ The website is for the Association of Parents and Friends of Persons with Down s
 
 The website is not finished yet.
 
-## About
+## Live Demo
 
 https://tecza-testpage.netlify.app/
 
