@@ -1,3 +1,15 @@
+# Tęcza - Website
+
+## About
+
+The website is for the Association of Parents and Friends of Persons with Down syndrome "Rainbow". </br>
+
+The website is not finished yet.
+
+## About
+
+https://tecza-testpage.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
